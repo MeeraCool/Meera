@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="meeraCrediwatch.listeners"/>
+ <listener class-name="resources.ExtentReporterNG"/>
+
+</listeners>
+
+		<test thread-count="5" name="SearchResults">
+			<classes>
+				<class name="meeraCrediwatch.SearchResultPage" />
+			</classes>
+		</test>
+		 <test thread-count="5" name="News">
+			<classes>
+				<class name="meeraCrediwatch.News" />
+			</classes>
+		</test>
+		<test thread-count="5" name="SingupFlow">
+			<classes>
+				<class name="meeraCrediwatch.SignUpPage" />
+			</classes>
+		</test>
+		<test thread-count="5" name="NavigationBar">
+			<classes>
+				<class
+					name="meeraCrediwatch.validateNavigationBar" />
+			</classes>
+		</test>
+		<test thread-count="5" name="NSEBSEPresent">
+			<classes>
+				<class 
+					name="meeraCrediwatch.validateBSEandNSEpresent" />
+			</classes>
+		</test>
+		<test thread-count="5" name="HomePage">
+			<classes>
+				<class name="meeraCrediwatch.HomePage" />
+			</classes>
+		</test>
+		<test thread-count="5" name="Test">
+			<classes>
+				<class name="meeraCrediwatch.AppTest" />
+			</classes>
+		</test> 
+</suite> <!-- Suite -->
